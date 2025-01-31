@@ -44,7 +44,7 @@ const Footer = () => {
           <FaEnvelope />
         </a>
       </SocialLinks>
-      <FooterText>&copy; 2024 [LokithaPK]. All rights reserved.</FooterText>
+      <FooterText>&copy; copywrite - LOKITHA</FooterText>
     </FooterContainer>
   );
 };

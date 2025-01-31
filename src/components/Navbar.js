@@ -34,7 +34,7 @@ const Navbar = () => {
       <NavItems>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/projects">Skills</NavLink>
-        <NavLink to="/resume">Resume</NavLink>
+        <NavLink to="/resume">My Works</NavLink>
         <NavLink to="/certifications">Certifications</NavLink>
       </NavItems>
     </Nav>

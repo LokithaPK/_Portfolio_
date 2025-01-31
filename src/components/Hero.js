@@ -38,10 +38,6 @@ const ImgBox = styled.div`
   max-width: 50%;
 `;
 
-const Img = styled.img`
-  max-width: 100%;
-  height: auto;
-`;
 
 const Hero = () => {
   return (
@@ -58,7 +54,6 @@ const Hero = () => {
         </motion.div>
       </TextBox>
       <ImgBox>
-        <Img src="/Pro.jpg" alt="Hero" />
       </ImgBox>
     </Container>
   );
