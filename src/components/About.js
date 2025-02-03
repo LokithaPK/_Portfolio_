@@ -5,76 +5,72 @@ const AboutContainer = styled.div`
   padding: 100px 20px;
   background: #0a192f;
   color: #ccd6f6;
+  text-align: center;
 `;
 
 const AboutTitle = styled.h2`
   font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #64ffda;
+  border-bottom: 3px solid #64ffda;
+  display: inline-block;
+  padding-bottom: 10px;
 `;
 
-const AboutContent = styled.p`
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-bottom: 2rem;
+const SectionContainer = styled.div`
+  margin-top: 3rem;
 `;
 
-const AchievementsContainer = styled.div`
-  margin-top: 2rem;
-`;
-
-const AchievementsTitle = styled.h3`
+const SectionTitle = styled.h3`
   font-size: 2rem;
   color: #64ffda;
   margin-bottom: 1rem;
 `;
 
-const AchievementList = styled.ul`
-  list-style-type: none;
-  padding: 0;
-`;
+const Card = styled.div`
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 8px rgba(100, 255, 218, 0.2);
 
-const AchievementItem = styled.li`
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-`;
-
-const ExperiencesContainer = styled.div`
-  margin-top: 2rem;
-`;
-
-const ExperiencesTitle = styled.h3`
-  font-size: 2rem;
-  color: #64ffda;
-  margin-bottom: 1rem;
-`;
-
-const ExperienceList = styled.ul`
-  list-style-type: none;
-  padding: 0;
-`;
-
-const ExperienceItem = styled.li`
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.5);
+  }
 `;
 
 const About = () => {
   return (
     <AboutContainer id="about">
       <AboutTitle>About Me</AboutTitle>
-      <AboutContent>
-        I am a web developer with a strong passion for creating dynamic and interactive web applications. As a fresher, I bring a robust foundational knowledge of the industry and am eager to contribute to innovative projects. My focus is on delivering high-quality solutions that meet client needs and create engaging user experiences.
-      </AboutContent>
+      <SectionContainer>
+        <SectionTitle>Education</SectionTitle>
+        <Card>
+          <strong>🎓 Bachelor of Technology</strong>
+          <p>Kongu Engineering College, 2022 - 2026</p>
+          <p>Specialization: Information Technology</p>
+        </Card>
+        <Card>
+          <strong>🏫 12th Grade</strong>
+          <p>SVN Matric Higher Secondary School(Chithode), 2021 - 2022</p>
+          <p>Percentage: 94.8%</p>
+        </Card>
+        <Card>
+          <strong>🏫 10th Grade</strong>
+          <p>Kongu Vellalar Matric Higher Secondary School(Perundurai), 2019 - 2020</p>
+          <p>Percentage: 82.8%</p>
+        </Card>
+      </SectionContainer>
 
-      <AchievementsContainer>
-        <AchievementsTitle>Achievements</AchievementsTitle>
-        <AchievementList>
-          <AchievementItem>Completed a comprehensive web development bootcamp with a focus on React.js and modern web technologies.</AchievementItem>
-          <AchievementItem>Developed a personal portfolio website showcasing various projects and skills, built with React.js and styled-components.</AchievementItem>
-          <AchievementItem>Successfully implemented a Java-based guessing game with a user-friendly interface, demonstrating problem-solving skills and technical proficiency.</AchievementItem>
-        </AchievementList>
-      </AchievementsContainer>
+      <SectionContainer>
+        <SectionTitle>Achievements</SectionTitle>
+        <Card>✔️ Completed a web development bootcamp focusing on React.js.</Card>
+        <Card>✔️ Developed a portfolio website showcasing my projects.</Card>
+        <Card>✔️ Built a Java-based guessing game demonstrating problem-solving skills.</Card>
+      </SectionContainer>
 
       
     </AboutContainer>

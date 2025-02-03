@@ -30,7 +30,7 @@ const NavItems = styled.div`
 const Navbar = () => {
   return (
     <Nav>
-      <NavLink to="/">Lo.</NavLink>
+      <NavLink to="/Portfolio">Lo.</NavLink>
       <NavItems>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/projects">Skills</NavLink>

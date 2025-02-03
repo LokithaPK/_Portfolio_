@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const SkillsContainer = styled.div`
-  padding: 100px 20px;
+  padding: 20px 50px;
   background: #0a192f;
   color: #ccd6f6;
 `;

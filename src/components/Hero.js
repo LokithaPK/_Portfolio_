@@ -31,13 +31,30 @@ const SubTitle = styled.h2`
   color: #64ffda;
 `;
 
+const Description = styled.p`
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  max-width: 80%;
+  line-height: 1.5;
+  margin-left: 80px; 
+`;
+
 const ImgBox = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 50%;
+  width: 370px;
+  height: 370px; 
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #64ffda;
+  box-shadow: 0 0 12px #64ffda;
 `;
 
+const ProfileImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+`;
 
 const Hero = () => {
   return (
@@ -51,9 +68,14 @@ const Hero = () => {
           <Title>Hi There! 👋</Title>
           <SubTitle>I'M LOKITHA</SubTitle>
           <p>Developer</p>
+          <Description>
+            I am a web developer passionate about building dynamic and interactive web applications. 
+            I focus on creating high-quality solutions that enhance user experience.
+          </Description>
         </motion.div>
       </TextBox>
       <ImgBox>
+        <ProfileImage src={`${process.env.PUBLIC_URL}/Loki.jpg`} alt="Profile" />
       </ImgBox>
     </Container>
   );
